@@ -31,7 +31,7 @@ class ShareViewController: NSViewController {
     }
     
     func sendToIndiepaper(url: String, destinationURL: String, bearerToken: String) {
-        let indiepaperURL = URL(string: "https://indiepaper.cleverdevil.io/")!
+        let indiepaperURL = URL(string: "https://indiepaper.io/")!
         
         var request = URLRequest(url: indiepaperURL)
         request.httpMethod = "POST"

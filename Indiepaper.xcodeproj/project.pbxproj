@@ -55,6 +55,7 @@
 		4354DEC520EC12CA00FC8219 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ShareViewController.xib; sourceTree = "<group>"; };
 		4354DEC720EC12CA00FC8219 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4354DEC820EC12CA00FC8219 /* Send_to_Indiepaper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Send_to_Indiepaper.entitlements; sourceTree = "<group>"; };
+		437E6C6F20EEAC4B00B0BE95 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +79,7 @@
 		4354DEA020EC115400FC8219 = {
 			isa = PBXGroup;
 			children = (
+				437E6C6F20EEAC4B00B0BE95 /* README.md */,
 				4354DEAB20EC115400FC8219 /* Indiepaper */,
 				4354DEBF20EC12CA00FC8219 /* Send to Indiepaper */,
 				4354DEAA20EC115400FC8219 /* Products */,
