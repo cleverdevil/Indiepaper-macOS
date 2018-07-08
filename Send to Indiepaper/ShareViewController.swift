@@ -10,9 +10,10 @@ import Cocoa
 
 class ShareViewController: NSViewController {
 
-    @IBOutlet var targetURL: NSTextField!
-    @IBOutlet var bearerToken: NSTextField!
-    
+    @IBOutlet weak var targetURL: NSTextField!
+    @IBOutlet weak var bearerToken: NSTextField!
+    @IBOutlet weak var categoryField: NSTokenField!
+
     override var nibName: NSNib.Name? {
         return NSNib.Name("ShareViewController")
     }
@@ -40,7 +41,14 @@ class ShareViewController: NSViewController {
         request.setValue(destinationURL, forHTTPHeaderField: "mp-destination")
         
         request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
-        let postString = "url=" + url
+        let categories = categoryField.objectValue as! [String]
+        var postString = "url=" + url
+        
+        for category in categories {
+            let escapedCategory = category.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)
+            postString = postString + "&category=" + escapedCategory!
+        }
+        
         request.httpBody = postString.data(using: .utf8)
         
         let task = URLSession.shared.dataTask(with: request) { data, response, error in

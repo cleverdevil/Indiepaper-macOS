@@ -7,13 +7,14 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="ShareViewController" customModule="Send_to_Indiepaper" customModuleProvider="target">
             <connections>
+                <outlet property="categoryField" destination="gFG-mB-Var" id="3z3-3Q-xf0"/>
                 <outlet property="view" destination="1" id="2"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView translatesAutoresizingMaskIntoConstraints="NO" id="1">
-            <rect key="frame" x="0.0" y="0.0" width="388" height="98"/>
+            <rect key="frame" x="0.0" y="0.0" width="388" height="166"/>
             <subviews>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1uM-r7-H1c">
                     <rect key="frame" x="302" y="3" width="82" height="32"/>
@@ -44,7 +45,7 @@ Gw
                     </connections>
                 </button>
                 <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="aNc-0i-CWK">
-                    <rect key="frame" x="131" y="66" width="127" height="17"/>
+                    <rect key="frame" x="131" y="134" width="127" height="17"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Send to Indiepaper" id="0xp-rC-2gr">
                         <font key="font" metaFont="systemBold"/>
                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -52,7 +53,7 @@ Gw
                     </textFieldCell>
                 </textField>
                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4M6-D5-WIf">
-                    <rect key="frame" x="101" y="66" width="22" height="22"/>
+                    <rect key="frame" x="101" y="134" width="22" height="22"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="22" id="BOe-aZ-Njc"/>
                         <constraint firstAttribute="height" constant="22" id="zLg-1a-wlZ"/>
@@ -60,14 +61,30 @@ Gw
                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="q3u-Am-ZIA"/>
                 </imageView>
                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nCj-58-pgO">
-                    <rect key="frame" x="18" y="41" width="352" height="17"/>
+                    <rect key="frame" x="18" y="84" width="352" height="42"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Click &quot;Send&quot; to publish the shared content to Indiepaper." id="hJa-U5-43E">
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Click &quot;Send&quot; to publish the shared content to Indiepaper. You may optionally add any categories below." id="hJa-U5-43E">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
+                <tokenField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gFG-mB-Var">
+                    <rect key="frame" x="20" y="48" width="348" height="28"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <tokenFieldCell key="cell" selectable="YES" editable="YES" borderStyle="bezel" alignment="left" placeholderString="Enter categories" drawsBackground="YES" allowsEditingTextAttributes="YES" id="MCw-jL-NuX">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </tokenFieldCell>
+                    <connections>
+                        <outlet property="delegate" destination="-2" id="2SZ-rN-zfB"/>
+                    </connections>
+                </tokenField>
+                <box verticalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="e1g-If-uKy">
+                    <rect key="frame" x="0.0" y="37" width="388" height="5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                </box>
             </subviews>
             <constraints>
                 <constraint firstItem="1uM-r7-H1c" firstAttribute="leading" secondItem="NVE-vN-dkz" secondAttribute="trailing" constant="8" id="1UO-J1-LbJ"/>
@@ -82,7 +99,7 @@ Gw
                 <constraint firstItem="aNc-0i-CWK" firstAttribute="leading" secondItem="4M6-D5-WIf" secondAttribute="trailing" constant="10" id="vFR-5i-Dvo"/>
                 <constraint firstItem="aNc-0i-CWK" firstAttribute="top" secondItem="1" secondAttribute="top" constant="15" id="vpR-tf-ebx"/>
             </constraints>
-            <point key="canvasLocation" x="139" y="116"/>
+            <point key="canvasLocation" x="139" y="150"/>
         </customView>
     </objects>
 </document>
