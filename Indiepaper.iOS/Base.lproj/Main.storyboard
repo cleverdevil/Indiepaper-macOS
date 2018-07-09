@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Indiepaper_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7k-TY-HGE">
+                                <rect key="frame" x="115" y="328.5" width="145" height="30"/>
+                                <state key="normal" title="Configure IndiePaper"/>
+                                <connections>
+                                    <action selector="openConfiguration:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S30-j2-ZVl"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VHc-XL-HpH">
+                                <rect key="frame" x="16" y="36" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hEx-9U-0cE">
+                                <rect key="frame" x="16" y="98" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hEx-9U-0cE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="1ZS-SU-D3L"/>
+                            <constraint firstItem="VHc-XL-HpH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-16" id="2mZ-bN-Saz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hEx-9U-0cE" secondAttribute="trailing" constant="16" id="JiN-2V-gHm"/>
+                            <constraint firstItem="VHc-XL-HpH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="O1S-06-wHh"/>
+                            <constraint firstItem="i7k-TY-HGE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="PGx-Ar-n2F"/>
+                            <constraint firstItem="VHc-XL-HpH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="fiF-ns-ygE"/>
+                            <constraint firstItem="i7k-TY-HGE" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="lR6-gS-uUc"/>
+                            <constraint firstItem="hEx-9U-0cE" firstAttribute="top" secondItem="VHc-XL-HpH" secondAttribute="bottom" constant="32" id="xWa-Lg-Kxu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bearerTokenField" destination="hEx-9U-0cE" id="3Se-7F-D9X"/>
+                        <outlet property="configureButton" destination="i7k-TY-HGE" id="Xmd-Et-F39"/>
+                        <outlet property="targetUrlField" destination="VHc-XL-HpH" id="gsQ-yH-pwc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.93725490196078431" green="0.73333333333333328" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>
