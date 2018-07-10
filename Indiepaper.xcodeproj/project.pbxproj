@@ -16,6 +16,7 @@
 		4354DECB20EC12CA00FC8219 /* Send to Indiepaper.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4354DEBE20EC12CA00FC8219 /* Send to Indiepaper.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4354DED020EE89CE00FC8219 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4354DEC220EC12CA00FC8219 /* ShareViewController.swift */; };
 		4354DED120EE978D00FC8219 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4354DEAE20EC115600FC8219 /* Assets.xcassets */; };
+		C854917120F52F9D0084A70B /* ConfigureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C854917020F52F9D0084A70B /* ConfigureViewController.swift */; };
 		C8A3F91620F3FD5800B94809 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A3F91520F3FD5800B94809 /* AppDelegate.swift */; };
 		C8A3F91820F3FD5800B94809 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A3F91720F3FD5800B94809 /* MainViewController.swift */; };
 		C8A3F91B20F3FD5800B94809 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8A3F91920F3FD5800B94809 /* Main.storyboard */; };
@@ -61,6 +62,7 @@
 		4354DEC720EC12CA00FC8219 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4354DEC820EC12CA00FC8219 /* Send_to_Indiepaper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Send_to_Indiepaper.entitlements; sourceTree = "<group>"; };
 		437E6C6F20EEAC4B00B0BE95 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C854917020F52F9D0084A70B /* ConfigureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureViewController.swift; sourceTree = "<group>"; };
 		C8A3F91320F3FD5800B94809 /* Indiepaper.iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Indiepaper.iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8A3F91520F3FD5800B94809 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8A3F91720F3FD5800B94809 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				C8A3F91C20F3FD5B00B94809 /* ios-Assets.xcassets */,
 				C8A3F91E20F3FD5B00B94809 /* LaunchScreen.storyboard */,
 				C8A3F92120F3FD5B00B94809 /* Info.plist */,
+				C854917020F52F9D0084A70B /* ConfigureViewController.swift */,
 			);
 			path = Indiepaper.iOS;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 			files = (
 				C8A3F91820F3FD5800B94809 /* MainViewController.swift in Sources */,
 				C8A3F91620F3FD5800B94809 /* AppDelegate.swift in Sources */,
+				C854917120F52F9D0084A70B /* ConfigureViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

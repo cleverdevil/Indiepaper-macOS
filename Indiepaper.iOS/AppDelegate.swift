@@ -13,9 +13,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    func openDefaultView() {
+        var rootView: UIViewController
+        let initialStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        
+        let defaults = UserDefaults(suiteName: "group.software.studioh.indiepaper")!
+        
+        if defaults.url(forKey: "targetURL") != nil, defaults.string(forKey: "bearerToken") != nil {
+            // Both Target Url and Bearer Token exist so we are authenticated
+            rootView = initialStoryboard.instantiateViewController(withIdentifier: "mainView")
+        } else {
+            // One or both Target Url and Bearer Token are missing, so we need to authenticate
+            rootView = initialStoryboard.instantiateViewController(withIdentifier: "configureView")
+        }
+        
+        self.window?.rootViewController = rootView
+        self.window?.makeKeyAndVisible()
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        openDefaultView()
         return true
     }
     
@@ -28,8 +46,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print("Attempting URL Call in App Delegate")
 
         // TODO: The line below needs to be uncommented and the suiteName needs to become the App Group name
-        // let defaults = UserDefaults(suiteName: "group.io.cleverdevil.Indiepaper")!
-        let defaults = UserDefaults.standard
+        let defaults = UserDefaults(suiteName: "group.software.studioh.indiepaper")!
+//        let defaults = UserDefaults.standard
         let urlToOpen = URLComponents(url: url.absoluteURL, resolvingAgainstBaseURL: false)
 
         if urlToOpen?.host == "configure" {
@@ -48,6 +66,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 }
             }
         }
+        
+        openDefaultView()
         
         return true
     }
