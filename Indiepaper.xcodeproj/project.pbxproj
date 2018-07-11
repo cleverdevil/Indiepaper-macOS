@@ -17,6 +17,9 @@
 		4354DED020EE89CE00FC8219 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4354DEC220EC12CA00FC8219 /* ShareViewController.swift */; };
 		4354DED120EE978D00FC8219 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4354DEAE20EC115600FC8219 /* Assets.xcassets */; };
 		C854917120F52F9D0084A70B /* ConfigureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C854917020F52F9D0084A70B /* ConfigureViewController.swift */; };
+		C854917C20F537890084A70B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C854917A20F537890084A70B /* MainInterface.storyboard */; };
+		C854918020F537890084A70B /* Indiepaper.iOS.Share.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C854917620F537890084A70B /* Indiepaper.iOS.Share.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C854918720F53A570084A70B /* SaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C854918620F53A570084A70B /* SaveViewController.swift */; };
 		C8A3F91620F3FD5800B94809 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A3F91520F3FD5800B94809 /* AppDelegate.swift */; };
 		C8A3F91820F3FD5800B94809 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A3F91720F3FD5800B94809 /* MainViewController.swift */; };
 		C8A3F91B20F3FD5800B94809 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8A3F91920F3FD5800B94809 /* Main.storyboard */; };
@@ -32,6 +35,13 @@
 			remoteGlobalIDString = 4354DEBD20EC12CA00FC8219;
 			remoteInfo = "Send to Indiepaper";
 		};
+		C854917E20F537890084A70B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4354DEA120EC115400FC8219 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C854917520F537890084A70B;
+			remoteInfo = Indiepaper.iOS.Share;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,6 +52,17 @@
 			dstSubfolderSpec = 13;
 			files = (
 				4354DECB20EC12CA00FC8219 /* Send to Indiepaper.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C854918420F537890084A70B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C854918020F537890084A70B /* Indiepaper.iOS.Share.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,6 +84,11 @@
 		4354DEC820EC12CA00FC8219 /* Send_to_Indiepaper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Send_to_Indiepaper.entitlements; sourceTree = "<group>"; };
 		437E6C6F20EEAC4B00B0BE95 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C854917020F52F9D0084A70B /* ConfigureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureViewController.swift; sourceTree = "<group>"; };
+		C854917620F537890084A70B /* Indiepaper.iOS.Share.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Indiepaper.iOS.Share.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C854917B20F537890084A70B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		C854917D20F537890084A70B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C854918520F53A570084A70B /* Indiepaper.iOS.Share-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Indiepaper.iOS.Share-Bridging-Header.h"; sourceTree = "<group>"; };
+		C854918620F53A570084A70B /* SaveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveViewController.swift; sourceTree = "<group>"; };
 		C8A3F91320F3FD5800B94809 /* Indiepaper.iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Indiepaper.iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8A3F91520F3FD5800B94809 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8A3F91720F3FD5800B94809 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +113,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C854917320F537890084A70B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C8A3F91020F3FD5800B94809 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -104,6 +137,7 @@
 				4354DEAB20EC115400FC8219 /* Indiepaper */,
 				4354DEBF20EC12CA00FC8219 /* Send to Indiepaper */,
 				C8A3F91420F3FD5800B94809 /* Indiepaper.iOS */,
+				C854917720F537890084A70B /* Indiepaper.iOS.Share */,
 				4354DEAA20EC115400FC8219 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -114,6 +148,7 @@
 				4354DEA920EC115400FC8219 /* Indiepaper.app */,
 				4354DEBE20EC12CA00FC8219 /* Send to Indiepaper.appex */,
 				C8A3F91320F3FD5800B94809 /* Indiepaper.iOS.app */,
+				C854917620F537890084A70B /* Indiepaper.iOS.Share.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,6 +175,18 @@
 				4354DEC820EC12CA00FC8219 /* Send_to_Indiepaper.entitlements */,
 			);
 			path = "Send to Indiepaper";
+			sourceTree = "<group>";
+		};
+		C854917720F537890084A70B /* Indiepaper.iOS.Share */ = {
+			isa = PBXGroup;
+			children = (
+				C854918E20F57A9B0084A70B /* Indiepaper.iOS.Share.entitlements */,
+				C854917A20F537890084A70B /* MainInterface.storyboard */,
+				C854917D20F537890084A70B /* Info.plist */,
+				C854918620F53A570084A70B /* SaveViewController.swift */,
+				C854918520F53A570084A70B /* Indiepaper.iOS.Share-Bridging-Header.h */,
+			);
+			path = Indiepaper.iOS.Share;
 			sourceTree = "<group>";
 		};
 		C8A3F91420F3FD5800B94809 /* Indiepaper.iOS */ = {
@@ -195,6 +242,23 @@
 			productReference = 4354DEBE20EC12CA00FC8219 /* Send to Indiepaper.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		C854917520F537890084A70B /* Indiepaper.iOS.Share */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C854918120F537890084A70B /* Build configuration list for PBXNativeTarget "Indiepaper.iOS.Share" */;
+			buildPhases = (
+				C854917220F537890084A70B /* Sources */,
+				C854917320F537890084A70B /* Frameworks */,
+				C854917420F537890084A70B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Indiepaper.iOS.Share;
+			productName = Indiepaper.iOS.Share;
+			productReference = C854917620F537890084A70B /* Indiepaper.iOS.Share.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		C8A3F91220F3FD5800B94809 /* Indiepaper.iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C8A3F92420F3FD5B00B94809 /* Build configuration list for PBXNativeTarget "Indiepaper.iOS" */;
@@ -202,10 +266,12 @@
 				C8A3F90F20F3FD5800B94809 /* Sources */,
 				C8A3F91020F3FD5800B94809 /* Frameworks */,
 				C8A3F91120F3FD5800B94809 /* Resources */,
+				C854918420F537890084A70B /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C854917F20F537890084A70B /* PBXTargetDependency */,
 			);
 			name = Indiepaper.iOS;
 			productName = Indiepaper.iOS;
@@ -265,6 +331,7 @@
 				4354DEA820EC115400FC8219 /* Indiepaper */,
 				4354DEBD20EC12CA00FC8219 /* Send to Indiepaper */,
 				C8A3F91220F3FD5800B94809 /* Indiepaper.iOS */,
+				C854917520F537890084A70B /* Indiepaper.iOS.Share */,
 			);
 		};
 /* End PBXProject section */
@@ -286,6 +353,14 @@
 				4354DEC620EC12CA00FC8219 /* ShareViewController.xib in Resources */,
 				4354DED120EE978D00FC8219 /* Assets.xcassets in Resources */,
 				4354DEC120EC12CA00FC8219 /* icon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C854917420F537890084A70B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C854917C20F537890084A70B /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +394,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C854917220F537890084A70B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C854918720F53A570084A70B /* SaveViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C8A3F90F20F3FD5800B94809 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -337,6 +420,11 @@
 			target = 4354DEBD20EC12CA00FC8219 /* Send to Indiepaper */;
 			targetProxy = 4354DEC920EC12CA00FC8219 /* PBXContainerItemProxy */;
 		};
+		C854917F20F537890084A70B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C854917520F537890084A70B /* Indiepaper.iOS.Share */;
+			targetProxy = C854917E20F537890084A70B /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -354,6 +442,14 @@
 				4354DEC520EC12CA00FC8219 /* Base */,
 			);
 			name = ShareViewController.xib;
+			sourceTree = "<group>";
+		};
+		C854917A20F537890084A70B /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C854917B20F537890084A70B /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 		C8A3F91920F3FD5800B94809 /* Main.storyboard */ = {
@@ -570,9 +666,71 @@
 			};
 			name = Release;
 		};
+		C854918220F537890084A70B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Indiepaper.iOS.Share/Indiepaper.iOS.Share.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26VU3UTL8J;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Indiepaper.iOS.Share/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				PRODUCT_BUNDLE_IDENTIFIER = "software.studioh.Indiepaper-iOS.Indiepaper-iOS-Share";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Indiepaper.iOS.Share/Indiepaper.iOS.Share-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C854918320F537890084A70B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Indiepaper.iOS.Share/Indiepaper.iOS.Share.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26VU3UTL8J;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Indiepaper.iOS.Share/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "software.studioh.Indiepaper-iOS.Indiepaper-iOS-Share";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Indiepaper.iOS.Share/Indiepaper.iOS.Share-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		C8A3F92220F3FD5B00B94809 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -594,6 +752,7 @@
 		C8A3F92320F3FD5B00B94809 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -638,6 +797,15 @@
 			buildConfigurations = (
 				4354DECD20EC12CA00FC8219 /* Debug */,
 				4354DECE20EC12CA00FC8219 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C854918120F537890084A70B /* Build configuration list for PBXNativeTarget "Indiepaper.iOS.Share" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C854918220F537890084A70B /* Debug */,
+				C854918320F537890084A70B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
