@@ -21,7 +21,7 @@ class MainViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        let defaults = UserDefaults(suiteName: "group.software.studioh.indiepaper")!
+        let defaults = UserDefaults(suiteName: "group.io.cleverdevil.Indiepaper")!
         
         targetUrl = defaults.url(forKey: "targetURL")
         bearerToken = defaults.string(forKey: "bearerToken")

@@ -70,6 +70,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		434676EB20FD624500D7859B /* Indiepaper.iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Indiepaper.iOS.entitlements; sourceTree = "<group>"; };
+		434676EC20FD626200D7859B /* Indiepaper.iOS.Share.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Indiepaper.iOS.Share.entitlements; sourceTree = "<group>"; };
 		4354DEA920EC115400FC8219 /* Indiepaper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Indiepaper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4354DEAC20EC115400FC8219 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4354DEAE20EC115600FC8219 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -180,7 +182,7 @@
 		C854917720F537890084A70B /* Indiepaper.iOS.Share */ = {
 			isa = PBXGroup;
 			children = (
-				C854918E20F57A9B0084A70B /* Indiepaper.iOS.Share.entitlements */,
+				434676EC20FD626200D7859B /* Indiepaper.iOS.Share.entitlements */,
 				C854917A20F537890084A70B /* MainInterface.storyboard */,
 				C854917D20F537890084A70B /* Info.plist */,
 				C854918620F53A570084A70B /* SaveViewController.swift */,
@@ -192,6 +194,7 @@
 		C8A3F91420F3FD5800B94809 /* Indiepaper.iOS */ = {
 			isa = PBXGroup;
 			children = (
+				434676EB20FD624500D7859B /* Indiepaper.iOS.entitlements */,
 				C8A3F91520F3FD5800B94809 /* AppDelegate.swift */,
 				C8A3F91720F3FD5800B94809 /* MainViewController.swift */,
 				C8A3F91920F3FD5800B94809 /* Main.storyboard */,
@@ -310,8 +313,20 @@
 							};
 						};
 					};
+					C854917520F537890084A70B = {
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					C8A3F91220F3FD5800B94809 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -673,7 +688,7 @@
 				CODE_SIGN_ENTITLEMENTS = Indiepaper.iOS.Share/Indiepaper.iOS.Share.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 26VU3UTL8J;
+				DEVELOPMENT_TEAM = 7V6W525663;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -686,7 +701,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				PRODUCT_BUNDLE_IDENTIFIER = "software.studioh.Indiepaper-iOS.Indiepaper-iOS-Share";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.cleverdevil.Indiepaper-iOS.Indiepaper-iOS-Share";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -704,7 +719,7 @@
 				CODE_SIGN_ENTITLEMENTS = Indiepaper.iOS.Share/Indiepaper.iOS.Share.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 26VU3UTL8J;
+				DEVELOPMENT_TEAM = 7V6W525663;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -716,7 +731,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "software.studioh.Indiepaper-iOS.Indiepaper-iOS-Share";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.cleverdevil.Indiepaper-iOS.Indiepaper-iOS-Share";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -732,8 +747,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Indiepaper.iOS/Indiepaper.iOS.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7V6W525663;
 				INFOPLIST_FILE = Indiepaper.iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -754,8 +771,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Indiepaper.iOS/Indiepaper.iOS.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7V6W525663;
 				INFOPLIST_FILE = Indiepaper.iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -32,7 +32,7 @@ class ConfigureViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let defaults = UserDefaults(suiteName: "group.software.studioh.indiepaper")!
+        let defaults = UserDefaults(suiteName: "group.io.cleverdevil.Indiepaper")!
         
         if defaults.url(forKey: "targetURL") != nil, defaults.string(forKey: "bearerToken") != nil {
             cancelButton.isHidden = false
