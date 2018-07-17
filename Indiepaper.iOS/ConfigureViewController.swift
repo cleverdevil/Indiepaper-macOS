@@ -15,7 +15,7 @@ class ConfigureViewController: UIViewController {
     @IBOutlet weak var titleText: UILabel!
     
     @IBAction func loginTapped(_ sender: Any) {
-        if let meUrl = domainUrl.text, let openUrl = URL(string: "https://indiepaper.io/indieauth?me=\(meUrl)"),
+        if let meUrl = domainUrl.text, let openUrl = URL(string: "https://indiepaper.io/indieauth?app=true&me=\(meUrl)"),
             UIApplication.shared.canOpenURL(openUrl) {
             UIApplication.shared.open(openUrl)
         }
