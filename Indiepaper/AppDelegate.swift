@@ -36,6 +36,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         showConfirmation()
     }
     
+    @IBAction func indieAuthClicked(_ sender: Any) {
+        NSWorkspace.shared.open(NSURL(string: "https://www.indiepaper.io/indieauth.html?app=true")! as URL)
+    }
+    
     func applicationWillFinishLaunching(_ aNotification: Notification) {
         // register URL handler
         let aem = NSAppleEventManager.shared();
