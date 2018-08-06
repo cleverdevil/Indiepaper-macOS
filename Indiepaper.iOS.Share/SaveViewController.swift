@@ -67,7 +67,7 @@ class SaveViewController: UIViewController {
                         request.httpMethod = "POST"
                         request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
                     request.setValue("Bearer \(self?.bearerToken! ?? "")", forHTTPHeaderField: "Authorization")
-                        request.setValue(self?.targetUrl!.absoluteString, forHTTPHeaderField: "mp-destination")
+                        request.setValue(self?.targetUrl!.absoluteString, forHTTPHeaderField: "x-indiepaper-destination")
                         request.httpBody = "url=\(url.absoluteString)".data(using: .utf8, allowLossyConversion: false)
                     
                         // set up the session

@@ -38,7 +38,7 @@ class ShareViewController: NSViewController {
         request.httpMethod = "POST"
         
         request.setValue("Bearer \(bearerToken)", forHTTPHeaderField: "Authorization")
-        request.setValue(destinationURL, forHTTPHeaderField: "mp-destination")
+        request.setValue(destinationURL, forHTTPHeaderField: "x-indiepaper-destination")
         
         request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
         let categories = categoryField.objectValue as! [String]
